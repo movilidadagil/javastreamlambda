@@ -86,4 +86,11 @@ public class AppTest
 
 
     }
+
+    @Test
+    public void streamMap(){
+        // son harfi i olan isimleri uppercase olarak ekrana yazdırma
+        Stream.of("Hasan","Meryem Duru","Berrin","Abhii","Ali").
+                filter(s -> s.endsWith("i")).map(s->s.toUpperCase())
+    }
 }
